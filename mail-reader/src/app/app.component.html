@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <img width="100" alt="Company Logo" src="../src/logo.png">
+
+  <h1>
+    Welcome to {{ title }}
+  </h1>
+
+  <button (click)="getPosts()"></button>
+
+  <div *ngFor="let post of posts | async">
+     {{ post | json}}
+  </div>
+<app-loginscreen></app-loginscreen>
+</div>
